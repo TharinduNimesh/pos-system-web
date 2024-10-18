@@ -7,10 +7,12 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "supabase:generate": "supabase gen types --lang=typescript --project-id omfhkajlvchmutqikdag --schema public > ./types/database.types.ts"
   },
   "dependencies": {
     "@nuxt/ui": "^2.18.7",
+    "@supabase/supabase-js": "^2.45.5",
     "nuxt": "^3.13.0",
     "vue": "latest",
     "vue-router": "latest"
